@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="Keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="Description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}>-<{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+<body> 
+<div align="center" id="obCenter"> 
+  <table align="center" cellspacing="0" id="obLayout">  
+    <tr>
+      <td colspan="3" id="obSHT" ><table cellspacing="0">
+        <tr>
+          <td id="obSHLTC" ></td>
+          <td>&nbsp;</td>
+          <td id="obSHRTC" ></td>
+        </tr>
+      </table></td>
+    </tr>
+    <tr>
+      <td rowspan="5" id="obSHL" ><div id="obSHLT"></div></td> 
+      <td id="obR1" ><table cellspacing="0"> 
+          <tr> 
+            <td>&nbsp;</td> 
+            <td id="obLogin" ><a href="<{$xoops_url}>">Home</a> / <a href="<{$xoops_url}>/modules/newbb">Forums</a> / <a href="<{$xoops_url}>/modules/news">News</a>  / <a href="<{$xoops_url}>/modules/contact">Contact</a></td> 
+          </tr> 
+        </table></td> 
+      <td rowspan="5" id="obSHR" ><div id="obSHRT"></div></td>
+    </tr> 
+    <tr>
+      <td id="obHead" ><table cellspacing="0"> 
+          <tr> 
+            <td><img src="<{$xoops_imageurl}>/images/header.png" alt="<{$xoops_sitename}>" width="770" height="132" align="center"/></td> 
+          </tr> 
+        </table></td> 
+    </tr> 
+    <tr>
+      <td>&nbsp;</td>
+    </tr> 
+    <tr>
+      <td><table cellspacing="0"> 
+          <tr> 
+            <td rowspan="2" id="leftcolumn" ><{foreach item=block from=$xoops_lblocks}> <{include file="casafree/obblock.html"}> <{/foreach}></td> 
+            <td id="centercolumn" ><{if $xoops_showcblock == 1}> 
+              <table cellspacing="0"> 
+                <tr> 
+                  <td id="centerCcolumn" colspan="2"> <!-- Start center-center blocks loop --> 
+<{foreach item=block from=$xoops_ccblocks}> <{include file="casafree/obblock_c.html"}> <{/foreach}> 
+                    <!-- End center-center blocks loop --> </td> 
+                </tr> 
+                <tr> 
+                  <td id="centerLcolumn"> <!-- Start center-left blocks loop --> 
+<{foreach item=block from=$xoops_clblocks}> <{include file="casafree/obblock_c.html"}> <{/foreach}> 
+                    <!-- End center-left blocks loop --> </td> 
+                  <td id="centerRcolumn"> <!-- Start center-right blocks loop --> 
+<{foreach item=block from=$xoops_crblocks}> <{include file="casafree/obblock_c.html"}> <{/foreach}> 
+                    <!-- End center-right blocks loop --> </td> 
+                </tr> 
+              </table> 
+<{/if}> 
+              <!-- End display center blocks --> 
+              <div id="content"> <{$xoops_contents}></div> 
+              <br /> 
+              <br /> 
+            <br /> </td> 
+<{if $xoops_showrblock == 1}> 
+            <td rowspan="2" id="rightcolumn" ><{foreach item=block from=$xoops_rblocks}> <{include file="casafree/obblock.html"}> <{/foreach}></td> 
+<{/if}> </tr> 
+
+        </table></td> 
+    </tr> 
+    <tr>
+<!-- Please do not remove link to Casafree -->
+      <td background="<{$xoops_imageurl}>/images/foot.png" id="obFooter" >Theme by <a href="http://www.casafree.com/"></a> <a href="http://www.casafree.com" class="menuMain"><b>Casafree</b></a>
+      <td> 
+    </tr>
+    <tr>
+      <td id="obLBC" >&nbsp;</td>
+      <td id="obSHB" >&nbsp;</td>
+      <td id="obRBC" >&nbsp;</td>
+    </tr> 
+  </table> 
+</div> 
+</body>
+</html>
